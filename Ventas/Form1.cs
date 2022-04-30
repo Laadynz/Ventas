@@ -23,6 +23,29 @@ namespace Ventas
             memoria.Codigo = "001";
             memoria.Descripcion = "Memoria RAM";
             memoria.PrecioUnitario = 100.15m;
-        }
+
+            Producto discoDuro = new Producto() 
+            {
+                Codigo = "002",
+                Descripcion = "Memoria RAM 206",
+                PrecioUnitario = 1150.15m
+            
+            };
+
+            Producto Laptop = new Producto() 
+            {
+               Codigo = "2112",
+               Descripcion = "Computadora Portatil DELL",
+               PrecioUnitario = 12000m
+            };
+
+            List<Producto> productos = new List<Producto>();
+            productos.Add(memoria);
+            productos.Add(discoDuro);
+            productos.Add(Laptop);
+
+            dgvProductos.DataSource = productos;
+
+        } 
     }
 }

@@ -16,5 +16,13 @@ namespace Ventas
         {
             InitializeComponent();
         }
+
+        private void btnAgregarProducto_Click(object sender, EventArgs e)
+        {
+            Producto memoria = new Producto();
+            memoria.Codigo = "001";
+            memoria.Descripcion = "Memoria RAM";
+            memoria.PrecioUnitario = 100.15m;
+        }
     }
 }
